@@ -121,42 +121,57 @@ where $Y_i$ is a postpartum maternal mental health outcome, $X_i$ includes mater
 
 \section{Results}
 \subsection{Descriptive patterns}
-We describe (i) the distribution of Level III/IV NICU capacity across counties, (ii) travel distances for vulnerable versus non-vulnerable births, and (iii) postpartum mental health utilization patterns by access strata.
+We describe (i) geographic NICU location, (ii) facility counts by NICU level, and (iii) high-acuity bed capacity. All maps in this section are constructed from the NeonatologySolutions NICU directory (N=1,402 facilities). We classify facilities using the directory's reported \texttt{NICU Level}. For state-level counts, we count facilities in each state by level. For county-level counts, we assign facilities to counties using ZIP-to-county crosswalk matching and then count facilities by county. We report Level II separately and aggregate higher-acuity facilities as Level III+IV. Bed-capacity maps sum reported \texttt{Beds} across Level III and Level IV facilities within each state or county.
 
-Figure~\ref{fig:nicu_locations} first shows NICU locations nationally. Figure~\ref{fig:nicu_levels_state} and Figure~\ref{fig:nicu_levels_county} then show facility-count heterogeneity for Level II versus combined Level III+IV. Figure~\ref{fig:nicu_beds_aggregate} reports aggregate Level III+IV bed capacity by state and county. Higher-acuity capacity is concentrated in large metropolitan/referral systems, with substantial cross-county variation within states.
+Map legends are binned from the underlying count/bed distributions, and the map annotations report the mean and standard deviation across all states (state maps) or all counties (county maps), including zeros. Alaska and Hawaii are repositioned for visualization.
 
 \begin{figure}[htbp!]
 \centering
 \caption{NICU locations in the United States}
-\includegraphics[width=0.95\textwidth]{Figures/Background/nicu_locations.png}
+\includegraphics[width=\textwidth]{Figures/Background/nicu_locations.png}
 \label{fig:nicu_locations}
 \end{figure}
 
 \begin{figure}[htbp!]
 \centering
-\caption{Aggregate NICU bed capacity (Level III + Level IV)}
-\includegraphics[width=0.95\textwidth]{Figures/Background/nicu_state_level_III_IV_beds.png}
-\vspace{0.5em}
-\includegraphics[width=0.95\textwidth]{Figures/Background/nicu_county_level_III_IV_beds.png}
-\label{fig:nicu_beds_aggregate}
+\caption{NICU Level II facility count by state}
+\includegraphics[width=\textwidth]{Figures/Background/nicu_state_level_II_count.png}
+\label{fig:nicu_state_level2_count}
 \end{figure}
 
 \begin{figure}[htbp!]
 \centering
-\caption{NICU facility counts by state (Level II and Level III + IV)}
-\includegraphics[width=0.95\textwidth]{Figures/Background/nicu_state_level_II_count.png}
-\vspace{0.5em}
-\includegraphics[width=0.95\textwidth]{Figures/Background/nicu_state_level_III_IV_count.png}
-\label{fig:nicu_levels_state}
+\caption{NICU Level III + IV facility count by state}
+\includegraphics[width=\textwidth]{Figures/Background/nicu_state_level_III_IV_count.png}
+\label{fig:nicu_state_level34_count}
 \end{figure}
 
 \begin{figure}[htbp!]
 \centering
-\caption{NICU facility counts by county (Level II and Level III + IV)}
-\includegraphics[width=0.95\textwidth]{Figures/Background/nicu_county_level_II_count.png}
-\vspace{0.5em}
-\includegraphics[width=0.95\textwidth]{Figures/Background/nicu_county_level_III_IV_count.png}
-\label{fig:nicu_levels_county}
+\caption{NICU Level II facility count by county}
+\includegraphics[width=\textwidth]{Figures/Background/nicu_county_level_II_count.png}
+\label{fig:nicu_county_level2_count}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+\caption{NICU Level III + IV facility count by county}
+\includegraphics[width=\textwidth]{Figures/Background/nicu_county_level_III_IV_count.png}
+\label{fig:nicu_county_level34_count}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+\caption{Aggregate NICU bed capacity (Level III + Level IV) by state}
+\includegraphics[width=\textwidth]{Figures/Background/nicu_state_level_III_IV_beds.png}
+\label{fig:nicu_state_beds_34}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centering
+\caption{Aggregate NICU bed capacity (Level III + Level IV) by county}
+\includegraphics[width=\textwidth]{Figures/Background/nicu_county_level_III_IV_beds.png}
+\label{fig:nicu_county_beds_34}
 \end{figure}
 
 \subsection{Main estimates}
